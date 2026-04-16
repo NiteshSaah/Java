@@ -8,7 +8,7 @@ related to **Java Lambda Expressions** and **JVM internals**. It is
 ideal for interview preparation, teaching, and self-study.
 
 ------------------------------------------------------------------------
-• Java 8 Let you Write code in Declarative way(**What to Do**) rather imperative way(** How to Do**).
+• Java 8 Let you Write code in Declarative way(**What to Do**) rather imperative way(**How to Do**).
 <img width="653" height="25" alt="image" src="https://github.com/user-attachments/assets/49c38ef5-2adb-461d-afb9-58ffa501e0d0" />
 <img width="1284" height="209" alt="image" src="https://github.com/user-attachments/assets/b39ebe6c-fec4-4017-b6bb-5ac786f3c77f" />
 
