@@ -8,6 +8,9 @@ related to **Java Lambda Expressions** and **JVM internals**. It is
 ideal for interview preparation, teaching, and self-study.
 
 ------------------------------------------------------------------------
+• Java 8 Let you Write code in Declarative way(**What to Do**) rather imperative way(** How to Do**).
+<img width="653" height="25" alt="image" src="https://github.com/user-attachments/assets/49c38ef5-2adb-461d-afb9-58ffa501e0d0" />
+<img width="1284" height="209" alt="image" src="https://github.com/user-attachments/assets/b39ebe6c-fec4-4017-b6bb-5ac786f3c77f" />
 
 ## 🟢 1. Beginner-Level Interview Questions
 
@@ -24,6 +27,9 @@ ideal for interview preparation, teaching, and self-study.
 9.  What is a method reference?
 10. When should you prefer a method reference over a lambda expression?
 
+1) What is Lambda Expression? 
+Ans: Lambda Expressions are the shorthand way for writing small pieces of behavior . 
+        • No need to write an entire class. 
 ------------------------------------------------------------------------
 
 ## 🟡 2. Intermediate-Level Interview Questions
