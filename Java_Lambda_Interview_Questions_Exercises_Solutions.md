@@ -189,10 +189,21 @@ How can you inspect the bytecode generated for a lambda expression?
 ------------------------------------------------------------------------
 -----------------------------------------------------------------------
 ## 🧪 4. Hands-On Exercises with Solutions
+### ✅ Exercise 1: Basic Arithmetic Operations
+**Problem:**
+``` java
+@FunctionalInterface
+interface Calculator {
+    int operate(int a, int b);
+}
+```
+**Tasks:**
 
+    Implement addition, subtraction, multiplication, and division using lambdas.
+    Invoke each operation.
 ### ✅ Exercise 1: Basic Arithmetic Operations
 
-**Problem:** Implement arithmetic operations using a functional
+**Solution:** Implement arithmetic operations using a functional
 interface.
 
 ``` java
@@ -222,7 +233,13 @@ public class CalculatorDemo {
 ------------------------------------------------------------------------
 
 ### ✅ Exercise 2: Employee Filtering and Grouping
+**Tasks:**
 
+    Filter employees with salary greater than 50,000.
+    Sort employees by name.
+    Group employees by department using streams.
+    
+**Solution:** 
 ``` java
 import java.util.*;
 import java.util.stream.Collectors;
@@ -274,7 +291,19 @@ public class EmployeeDemo {
 
 ------------------------------------------------------------------------
 
-### ✅ Exercise 3: Predicate Chaining
+### ✅ Exercise 3: Custom Predicate Chaining
+**Tasks:**
+
+    Create predicates to check if a number is:
+        Greater than 10
+        Even
+        Combine them using and() and or().
+    
+   **Problem:**
+        ``` java
+        Predicate<Integer> greaterThan10 = x -> x > 10;
+        Predicate<Integer> isEven = x -> x % 2 == 0;
+        ```  
 
 ``` java
 import java.util.function.Predicate;
@@ -298,6 +327,10 @@ public class PredicateDemo {
 ------------------------------------------------------------------------
 
 ### ✅ Exercise 4: Constructor Reference
+**Tasks:**
+
+    Create a class Person with a constructor that accepts a name.
+    Use a constructor reference (Person::new) with a Supplier or Function.
 
 ``` java
 import java.util.function.Function;
@@ -329,7 +362,16 @@ public class ConstructorReferenceDemo {
 ------------------------------------------------------------------------
 
 ### ✅ Exercise 5: Stream Processing Pipeline
+Given:
+``` java
+List<String> names = Arrays.asList("Amit", "Raj", "Anita", "John", "Aman");
+```
+**Tasks:**
 
+    Filter names starting with "A".
+    Convert them to uppercase.
+    Sort them alphabetically.
+    Collect the result into a list.
 ``` java
 import java.util.*;
 import java.util.stream.Collectors;
