@@ -86,45 +86,79 @@ ideal for interview preparation, teaching, and self-study.
 **5. Debugging**
 
     How can you inspect the bytecode generated for a lambda expression?
+----------------------------
     
 **Scenario-Based Questions on Lambda Expression for Java Tech Lead Role**
 
 **1. Legacy Code Refactoring**
+ 
+How would you refactor a large codebase full of anonymous inner classes into Lambdas without breaking existing functionality?  
 
-How would you refactor a large codebase full of anonymous inner classes into Lambdas without breaking existing functionality?
-**2.Stream API for Business Logic**
+**2. Stream API for Business Logic**
 
 You need to filter employees with salary > 50k, group them by department, and calculate average salary. How would you design this using Lambdas and Streams?
+
 **3. Concurrency Simplification**
 
 In a multi-threaded environment, how can Lambdas simplify Runnable creation, and what pitfalls should you avoid regarding shared mutable state?
+
 **4. Comparator Design**
 
 You need to sort employees by multiple fields (e.g., department, then salary, then name). How would you implement this using Comparator.comparing with Lambdas?
+
 **5. Event-Driven UI**
 
 In a Swing/JavaFX application, how can Lambdas improve readability and reduce boilerplate in event listeners?
+
 **6. Performance Trade-offs**
 
 When processing millions of records with Streams and Lambdas, what performance trade-offs should you consider compared to traditional loops?
+
 **7. Error Handling in Lambdas**
 
 How would you handle checked exceptions inside a Lambda expression when working with file I/O streams?
+
 **8. Reusable Functional Interfaces**
 
 Your team often writes repetitive filtering logic. How would you design reusable functional interfaces with Lambdas to reduce duplication?
+
 **9. Integration with Third-Party APIs**
 
 Suppose you’re integrating with a third-party API that expects callbacks. How can Lambdas simplify callback handling while keeping code maintainable?
+
 **10. Testing & Debugging Pipelines**
 
 How would you test and debug complex Lambda-based stream pipelines in a production-grade application?
+
 **11. Parallel Streams**
 
 When would you use parallel streams with Lambdas, and how would you ensure thread-safety and optimal performance?
+
 **12. Code Readability vs. Maintainability**
 
 How do you balance concise Lambda expressions with readability for junior developers in your team?
+----------------------------
+**1. Concurrency Scenario**
+
+How do lambda expressions help in writing concurrent code with the ExecutorService?
+
+**2. Exception Handling**
+
+How would you handle checked exceptions inside a lambda used in a stream?
+
+**3. Serialization**
+
+What issues can arise when serializing lambda expressions?
+
+**4. Performance**
+
+Are lambda expressions always faster than anonymous classes? Explain.
+
+**5. Debugging**
+
+How can you inspect the bytecode generated for a lambda expression?
+
+--- 
 
 ------------------------------------------------------------------------
 ## 3.2 Scenario-Based Questions on Lambda Expression for Java Tech Lead Role
@@ -137,20 +171,7 @@ How do you balance concise Lambda expressions with readability for junior develo
 | S4              | How would you design a comparator for sorting employees by multiple fields using Lambda? | **Use Comparator.comparing + thenComparing with Lambdas** | **Hard** |
 | S5              | How can Lambdas improve readability in event-driven UI code? | **Replace verbose listeners with concise Lambdas** | **Easy** |
 
-------------------------------------------------------------------------
-| **Scenario ID** | **Question** | **Focus Area** |
-|-----------------|--------------|----------------|
-| S1              | Refactor anonymous inner classes into Lambdas | Legacy modernization |
-| S2              | Filter and sort employees using Streams | Data processing |
-| S3              | Simplify Runnable creation with Lambdas | Concurrency |
-| S4              | Multi-field sorting with Comparator.comparing | Advanced Collections |
-| S5              | Improve readability in UI event listeners | UI/UX |
-| S6              | Performance trade-offs in large data sets | Optimization |
-| S7              | Handle checked exceptions in Lambdas | Error handling |
-| S8              | Design reusable functional interfaces | Code reuse |
-| S9              | Simplify third-party API callbacks | Integration |
-| S10             | Test and debug stream pipelines | Quality assurance |
-------------------------------------------------------------------------
+
 | **Scenario ID** | **Question** | **Focus Area** |
 |-----------------|--------------|----------------|
 | S1              | Refactor anonymous inner classes into Lambdas | Legacy modernization |
