@@ -4,7 +4,8 @@
 Java **Lambda Expressions**, introduced in **Java 8**, enable
 functional-style programming by allowing behavior to be treated as data.
 They make code more concise, readable, and expressive.
-<img width="1536" height="1024" alt="Copilot_20260416_101810" src="https://github.com/user-attachments/assets/b0cc3916-8eda-41f6-9118-592265fa9080" />
+<img width="1293" height="472" alt="image" src="https://github.com/user-attachments/assets/43107984-3154-45de-9d1e-927f6e9291d8" />
+
 ### Key Characteristics
 -   Anonymous (no name)
 -   Can accept parameters
@@ -190,7 +191,7 @@ System.out.println(r1 == r2); // Often true for stateless lambdas
 
 ## 8. Anonymous Class vs Lambda: JVM Perspective
 
-  |----------------------------------------------------------------------------|
+  ----------------------------------------------------------------------------
   |Feature         |Anonymous Class              |Lambda Expression            |
   |--------------- |---------------------------- |-----------------------------|
   |Class File      |Separate `.class` generated  |No separate `.class`         |
