@@ -27,9 +27,16 @@ ideal for interview preparation, teaching, and self-study.
 9.  What is a method reference?
 10. When should you prefer a method reference over a lambda expression?
 
-1) What is Lambda Expression? 
-Ans: Lambda Expressions are the shorthand way for writing small pieces of behavior . 
-        • No need to write an entire class. 
+|1)  | What is Lambda Expression?                                                          |
+|----|:------------------------------------------------------------------------------------|
+|Ans:| **Lambda Expressions are the shorthand way for writing small pieces of behavior**   | 
+|    |     • No need to write an entire class.                                            |
+|    | **A lambda expression is an anonymous function that:**                             |
+|    |         **• Has no name**                                                             . |
+|    |         **• Can take parameters**                                                       |
+|    |         **• Returns a value**                                                           |
+|    |         **• Can be passed as an argument or assigned to a variable**                     |
+
 ------------------------------------------------------------------------
 
 ## 🟡 2. Intermediate-Level Interview Questions
