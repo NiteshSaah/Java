@@ -1,19 +1,16 @@
 # Java Lambda Expressions: In-Depth Tutorial with JVM Internals
 
 ## 1. Introduction
-
 Java **Lambda Expressions**, introduced in **Java 8**, enable
 functional-style programming by allowing behavior to be treated as data.
 They make code more concise, readable, and expressive.
 <img width="1536" height="1024" alt="Copilot_20260416_101810" src="https://github.com/user-attachments/assets/b0cc3916-8eda-41f6-9118-592265fa9080" />
 ### Key Characteristics
-
 -   Anonymous (no name)
 -   Can accept parameters
 -   Can return values
 -   Can be passed as arguments or assigned to variables
 -   Used with **functional interfaces**
-
 ------------------------------------------------------------------------
 
 ## 2. Lambda Expression Syntax
@@ -193,19 +190,14 @@ System.out.println(r1 == r2); // Often true for stateless lambdas
 
 ## 8. Anonymous Class vs Lambda: JVM Perspective
 
-  --------------------------------------------------------------------------
-  Feature         Anonymous Class              Lambda Expression
-  --------------- ---------------------------- -----------------------------
-  Class File      Separate `.class` generated  No separate `.class`
-
-  `this`          Refers to anonymous class    Refers to enclosing class
-  reference                                    
-
-  Performance     Slightly heavier             More optimized
-
-  Bytecode        `new` instruction            `invokedynamic`
-
-  Serialization   Different semantics          More flexible
+  |----------------------------------------------------------------------------|
+  |Feature         |Anonymous Class              |Lambda Expression            |
+  |--------------- |---------------------------- |-----------------------------|
+  |Class File      |Separate `.class` generated  |No separate `.class`         |
+  |`this` reference |Refers to anonymous class    |Refers to enclosing class    |                    
+  |Performance     |Slightly heavier             |More optimized               |
+  |Bytecode        | `new` instruction           | `invokedynamic`             |
+  |Serialization   |Different semantics          |More flexible                |
   --------------------------------------------------------------------------
 
 ### Example Demonstrating `this`
