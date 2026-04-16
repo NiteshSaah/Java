@@ -57,7 +57,7 @@ ideal for interview preparation, teaching, and self-study.
 
 ## 🔴 3. Advanced-Level Interview Questions (JVM Internals)
 
-1.  How are lambda expressions implemented at the bytecode level?
+1.  How are lambda expressions implemented at the bytecode level? Expected Answer: Using the invokedynamic instruction.
 2.  What is the role of the `invokedynamic` instruction?
 3.  What is `java.lang.invoke.LambdaMetafactory`?
 4.  Do lambda expressions generate separate `.class` files?
