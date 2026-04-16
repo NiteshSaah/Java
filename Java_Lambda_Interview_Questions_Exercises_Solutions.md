@@ -302,6 +302,7 @@ public class EmployeeDemo {
    **Problem:**
         ``` java
         Predicate<Integer> greaterThan10 = x -> x > 10;
+        
         Predicate<Integer> isEven = x -> x % 2 == 0;
         ```  
 
