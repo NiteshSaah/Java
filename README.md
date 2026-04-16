@@ -5,7 +5,7 @@
 Java **Lambda Expressions**, introduced in **Java 8**, enable
 functional-style programming by allowing behavior to be treated as data.
 They make code more concise, readable, and expressive.
-
+<img width="1536" height="1024" alt="Copilot_20260416_101810" src="https://github.com/user-attachments/assets/b0cc3916-8eda-41f6-9118-592265fa9080" />
 ### Key Characteristics
 
 -   Anonymous (no name)
@@ -65,13 +65,13 @@ System.out.println(add.operate(5, 3));  // Output: 8
 
 ### Common Built-in Functional Interfaces
 
-  Interface             Method                Example
-  --------------------- --------------------- ------------------------------
-  `Predicate<T>`        `boolean test(T t)`   `(x) -> x > 0`
-  `Function<T,R>`       `R apply(T t)`        `(x) -> x * 2`
-  `Consumer<T>`         `void accept(T t)`    `x -> System.out.println(x)`
-  `Supplier<T>`         `T get()`             `() -> new Random()`
-  `BiFunction<T,U,R>`   `R apply(T t, U u)`   `(a,b) -> a+b`
+  |Interface             |Method                |Example                       |
+  |--------------------- |--------------------- |------------------------------|
+  |`Predicate<T>`        |`boolean test(T t)`   |`(x) -> x > 0`                |
+  |`Function<T,R>`       |`R apply(T t)`        |`(x) -> x * 2`                    |
+  |`Consumer<T>`         |`void accept(T t)`    |`x -> System.out.println(x)`      |
+  |`Supplier<T>`         |`T get()`             |`() -> new Random()`              |
+  |`BiFunction<T,U,R>`   |`R apply(T t, U u)`   |`(a,b) -> a+b`                    |
 
 ------------------------------------------------------------------------
 
@@ -315,6 +315,7 @@ numbers.stream()
     JIT optimizations and execution
 
 ------------------------------------------------------------------------
+<img width="1536" height="1024" alt="Copilot_20260416_101810" src="https://github.com/user-attachments/assets/f8b15fe6-e370-4da8-98d1-d89652400ed6" />
 
 ## Conclusion
 
