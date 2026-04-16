@@ -308,7 +308,7 @@ numbers.stream()
     JIT optimizations and execution
 
 ------------------------------------------------------------------------
-<img width="1536" height="1024" alt="Copilot_20260416_101810" src="https://github.com/user-attachments/assets/f8b15fe6-e370-4da8-98d1-d89652400ed6" />
+<img width="1293" height="472" alt="image" src="https://github.com/user-attachments/assets/43107984-3154-45de-9d1e-927f6e9291d8" />
 
 **Step 1: Java Source Code**g
 The developer writes a lambda expression. Notice that no anonymous inner class is explicitly defined here; it is just a simple block of code.
