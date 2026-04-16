@@ -310,6 +310,26 @@ numbers.stream()
 ------------------------------------------------------------------------
 <img width="1536" height="1024" alt="Copilot_20260416_101810" src="https://github.com/user-attachments/assets/f8b15fe6-e370-4da8-98d1-d89652400ed6" />
 
+**Step 1: Java Source Code**g
+The developer writes a lambda expression. Notice that no anonymous inner class is explicitly defined here; it is just a simple block of code.
+
+**Step 2: Compilation**
+The javac compiler avoids creating a physical .class file for the lambda. Instead, it compiles the lambda block into a private method and generates an invokedynamic instruction.
+
+**Step 3: Invokedynamic Call Site**
+At runtime, the JVM reaches the invokedynamic instruction. This delegates the creation logic to a Bootstrap Method (BSM) provided by the JDK.
+
+**Step 4: LambdaMetaFactory**
+The Bootstrap Method calls LambdaMetaFactory. This factory dynamically spins up a synthetic class in memory using the ASM bytecode framework, linking it to the private method created in **Step 2.**
+
+**Step 5: Generated Lambda Instance**
+The JVM instantiates this lightweight synthetic class (e.g., RunnableLambda.class). It is now a fully functional object.
+
+**Summary of Benefits**
+By delaying creation to runtime, Java keeps jar files small (No New .class file on disk), captures variables efficiently, and allows the JIT compiler to heavily optimize the dynamic invocation.
+
+------------------------------------------------------------------------
+
 ## Conclusion
 
 Java Lambda Expressions provide a modern, efficient, and expressive way
