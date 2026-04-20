@@ -203,8 +203,7 @@ interface Calculator {
     Invoke each operation.
 ### ✅ Exercise 1: Basic Arithmetic Operations
 
-**Solution:** Implement arithmetic operations using a functional
-interface.
+**Solution:** Implement arithmetic operations using a functional interface.
 
 ``` java
 @FunctionalInterface
@@ -293,18 +292,18 @@ public class EmployeeDemo {
 
 ### ✅ Exercise 3: Custom Predicate Chaining
 **Tasks:**
-
+``` java
     Create predicates to check if a number is:
         Greater than 10
         Even
         Combine them using and() and or().
-    
+  ```   
    **Problem:**
-        ``` java
+   
+   ``` java
         Predicate<Integer> greaterThan10 = x -> x > 10;
-        
         Predicate<Integer> isEven = x -> x % 2 == 0;
-        ```  
+   ```  
 
 ``` java
 import java.util.function.Predicate;
@@ -329,10 +328,10 @@ public class PredicateDemo {
 
 ### ✅ Exercise 4: Constructor Reference
 **Tasks:**
-
+``` java
     Create a class Person with a constructor that accepts a name.
     Use a constructor reference (Person::new) with a Supplier or Function.
-
+``` 
 ``` java
 import java.util.function.Function;
 
@@ -373,6 +372,8 @@ List<String> names = Arrays.asList("Amit", "Raj", "Anita", "John", "Aman");
     Convert them to uppercase.
     Sort them alphabetically.
     Collect the result into a list.
+**Solution:** 
+
 ``` java
 import java.util.*;
 import java.util.stream.Collectors;
@@ -395,6 +396,11 @@ public class StreamPipelineDemo {
 ------------------------------------------------------------------------
 
 ### ✅ Exercise 6: Handling Checked Exceptions
+**Tasks:**
+``` java
+Create a wrapper method to handle checked exceptions in a lambda used with forEach.
+```
+**Solution:** 
 
 ``` java
 import java.util.function.Consumer;
@@ -431,6 +437,25 @@ public class ExceptionHandlingDemo {
 ------------------------------------------------------------------------
 
 ### ✅ Mini Project: Transaction Analyzer
+🏦 Project: Transaction Analyzer
+
+**Objective:** Use lambda expressions and streams to analyze banking transactions.
+``` java
+class Transaction {
+    String type;   // "DEPOSIT" or "WITHDRAWAL"
+    double amount;
+    String accountId;
+}
+```  
+**Tasks:**
+1. Calculate the total deposited amount.
+2. Find the largest transaction.
+3. Group transactions by accountId.
+4. Count the number of withdrawals.
+5. Sort transactions by amount in descending order.
+
+
+**Solution:** 
 
 ``` java
 import java.util.*;
@@ -490,7 +515,24 @@ public class TransactionAnalyzer {
     }
 }
 ```
+📊 7. Bytecode Analysis Exercise
 
+**Task:**
+
+**1. Write a simple lambda:**
+``` java
+Runnable r = () -> System.out.println("Hello");
+```  
+**2. Compile and inspect bytecode:**
+``` java
+javac Example.java
+javap -c -p Example
+```  
+**3. Questions:**
+
+    1. Identify the invokedynamic instruction.
+    2. Locate the synthetic method lambda$main$0.
+    3. Observe the bootstrap method arguments.
 ------------------------------------------------------------------------
 
 ## 📊 Summary
